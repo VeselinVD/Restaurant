@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+header {
+    background-image: url(img/bg-dish2.jpg);
+    background-size: cover;  
+    background-position: center center; 
+    min-height: 100vh;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: 100%;
+}
+nav {
+    padding: 0.5rem 0;
+}
+.pre-nav {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #026e78;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    flex: 1;
+}
+nav li a {
+    background-color: #2d99a4;
+    display: block;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+nav a.active {
+    background-color: #fff;
+    color: #026e78
+} 
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+.content p {
+     color:#026e78;
+ 
+}
+.content h1 {
+    background-color: #026e78;
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 200;
+}
+.content h2 {
+    background-color: #026e78;
+    color: white;
+    display: inline-block;
+    padding: 0.7rem;
+    font-weight: 100;
+}
+
+.teal-link {
+    background-color: #2d99a4;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+}
+input, textarea, button {
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.6rem 0;
+    border-radius: 15px;
+    background-color: #026e78;
+    color: white;
+}
+button {
+    width: 30%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color: #2d99a4;
+}
+
+@media screen and (max-width: 768px) {
+    .pre-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .content {
+        font-size: 1.5rem;
+        align-items: center;
+
+    }
+}
